@@ -49,3 +49,7 @@ body {
     border-radius: 100%;
 float: left;
 }
+
+.heading{
+    font-weight: 700;
+}
