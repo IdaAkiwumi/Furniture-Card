@@ -23,16 +23,25 @@ body {
     border-radius: 20px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
     
     grid-template-areas: 
-    "a b";
+    "a"
+    "b";
 }
 
+.imagecontainer{
+    grid-area: a;
+}
 .imagecontainer, img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+}
+
+.content{
+    grid-area: b;
 }
 
 #avatar, img{
