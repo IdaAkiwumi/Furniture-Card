@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    position: relative;
+    margin:5rem;
+}
+
+#container {
+    margin:auto;
+    font-family: 'Manrope', sans-serif;
+    font-size:13px;
+    font-weight: 500;
+    width:900px;
+    height:350px;
+
+    background-color:white;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
+    
+    grid-template-areas: 
+    "a b";
+}
+
+.imagecontainer{
+    grid-area: a;
+    max-height: 300px;
+}
+
+
+.imagecontainer >img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 350px;
+    max-width: 350px;
+    object-fit:cover;
+    object-position: 0px 0px;
+}
+
+.content{
+    grid-area: b;
+    padding:40px;
+    
+}
+
+.heading{
+    margin-top:-15px;
+    color:hsl(217, 19%, 35%);
+    font-weight: 700;
+    padding-bottom:20px;
+}
+
+.bodycopy{
+    color:hsl(214, 17%, 51%);
+    padding-bottom:20px;
+    margin-right: 20px;
+}
+
+#avatar{
+    width:20%;
+    border-radius: 100%;
+    margin-right: 20px;
+   
+}
+.michelle{
+    width: 20%;
+    border-radius: 100%;
+    float: left;
+    margin-right: 2rem;
+}
+
+
+.name{
+    color:hsl(217, 19%, 35%);
+    font-weight: 700;
+    padding-bottom:10px;
+
+}
+
+.date{
+    color: hsl(212, 23%, 69%);
+
+}
+
+.icon{
+    float:right;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    background-color: hsl(210, 46%, 95%);
+    margin-top:-25px;
+  
+}
+
+.share{
+margin-right: 10px;
+margin-top: 12px;
+margin-left:12px;
+}
+
+
+
+
+/* Another way to display without float */
+/* #avatar{
+    width:20%;
+    border-radius: 100%;
+    margin-right: 20px;
+   
+}
+.michelle{
+    width: 20%;
+    border-radius: 100%;
+}
+
+
+.name{
+    color:hsl(217, 19%, 35%);
+    font-weight: 700;
+    padding-left: 20px;
+    padding-bottom:20px;
+    margin-left:90px;
+    margin-top: -85px;
+}
+
+.date{
+    
+    color: hsl(212, 23%, 69%);
+    padding-left: 20px;
+    padding-bottom:20px;
+    margin-left:90px;
+    margin-top: -10px;
+} */
