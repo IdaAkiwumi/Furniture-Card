@@ -1,8 +1,24 @@
 *{
     margin: 0;
-    padding: 0px;
+    padding: 0rem;
     box-sizing: border-box;
 }
+/*
+ Extra small devices (phones,600px and down) 
+@media only screen and (max-width: 600px) { ... }
+
+Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) { ... }
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) { ... }
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) { ... }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) { ... } */
+
 
 body {
     background-color: hsl(210, 46%, 95%);
@@ -15,8 +31,9 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size:13px;
     font-weight: 500;
-    width:900px;
-    height:350px;
+
+    width:56.25rem;
+    height:21.875rem;
 
     background-color:white;
     border-radius: 10px;
@@ -31,22 +48,22 @@ body {
 
 .imagecontainer{
     grid-area: a;
-    max-height: 300px;
+    max-height: 18.75rem;
 }
 
 
 .imagecontainer >img{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    height: 350px;
-    max-width: 350px;
+    height: 21.875rem;
+    max-width: 21.875rem;
     object-fit:cover;
     object-position: 0px 0px;
 }
 
 .content{
     grid-area: b;
-    padding:40px;
+    padding:2.5rem;
     
 }
 
